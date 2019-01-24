@@ -11,4 +11,10 @@ function createWindow () {
   });
 }
 
+app.on('window-all-closed', () => {
+  if(process.platform !== 'darwin') {
+    app.quit();
+  }
+});
+
 app.on('ready', createWindow);
