@@ -1,5 +1,6 @@
 {
-  "name": "UAkron Bingo",
+  "name": "uakron-bingo",
+  "productName": "UAkron Bingo",
   "description": "A display for bingo events at The University of Akron",
   "version": "1.0.0",
   "author": {
