@@ -1,12 +1,24 @@
 {
   "name": "Bingo-Electron",
+  "description": "A display for bingo events at The University of Akron",
   "version": "1.0.0",
+  "author": {
+    "name": "Logan Crandall",
+    "email": "crandall.logan@gmail.com",
+    "url": "http://accidentallycoded.com/"
+  },
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "devDependencies": {
-    "electron": "^4.0.2"
+    "electron": "^4.0.2",
+    "electron-builder": "^20.38.5"
+  },
+  "build": {
+    "appId": "com.accidentallycoded.com.uakronbingo"
   }
 }
