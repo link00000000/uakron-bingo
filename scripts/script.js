@@ -48,6 +48,9 @@ window.onload = () => {
             calls = [];
             updateRecents();
         }
+        if(e.keyCode == 27) {
+            window.close();
+        }
     });
 
 }
