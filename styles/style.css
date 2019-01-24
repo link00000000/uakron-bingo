@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Aleo');
 
+:root {
+    --blue: #041E42;
+    --gold: #A89968;
+
+    --shadow: 2px 2px 10px 0px rgba(0, 0, 0, .8);
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
     user-select: none;
     -moz-user-select: none;
-    background-color: cornflowerblue;
+    background-color: var(--blue);
     font-family: 'Aleo';
     background-image: url('../assets/Zips_Z.png');
     background-repeat: no-repeat;
@@ -23,7 +30,7 @@ body {
     border-collapse: collapse;
     border: 1px solid gray;
     margin: 2%;
-    box-shadow: 2px 2px 10px 0px gray;
+    box-shadow: var(--shadow);
     background-color: white;
 }
 .called_numbers td {
@@ -36,7 +43,7 @@ body {
     background-color: lightyellow;
 }
 .called_numbers td.selected {
-    background-color: #efe186;
+    background-color: var(--gold);
     color: white;
 }
 .called_numbers .header {
@@ -64,7 +71,7 @@ body {
     border-spacing: 0;
     border-collapse: collapse;
     border: 2px solid gray;
-    box-shadow: 2px 2px 10px 0px gray;
+    box-shadow: var(--shadow);
     display: inline-block;
     background-color: white;
 }
@@ -89,7 +96,7 @@ body {
 }
 .pattern tbody td.selected::after {
     content: '';
-    background-color: #efe186;
+    background-color: var(--gold);
     width: 95%;
     height: 95%;
     display: block;
@@ -100,7 +107,7 @@ body {
 .recent_numbers {
     display: inline-block;
     margin-left: 2%;
-    box-shadow: 2px 2px 10px 0px gray;
+    box-shadow: var(--shadow);
 }
 .recent_numbers div {
     float: left;
